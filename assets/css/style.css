@@ -1,3 +1,57 @@
 *{
     color: #545454;
+    font-family:'Open Sans', sans-serif;
+}
+
+a{
+     color: #545454;
+}
+
+a:hover {
+    color: #D9594C;
+}
+
+/*Nav Bar*/
+.navbar {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.jumbotron h1{
+    font-family:'Open Sans', sans-serif;
+}
+
+.jumbotron p:nth-child(2){
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Buttons */
+.btn {
+    background-color:#D9594C;
+    border-color:#D9594C;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: #595F72;
+    border-color:#595F72;
+}
+
+/* Cards */
+.card {
+    border-color:;
+}
+
+.fab:hover {
+    
+}
+
+.groupon {
+    background-color: #b0f442;
 }
