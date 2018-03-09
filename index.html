@@ -12,6 +12,59 @@
 </head>
 
 <body>
+    <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content p-5">
+                    <div class="modal-header" align="left">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title mx-3" id="myModalLabel">Contact Form</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="requestacallform" method="POST" name="requestacallform">
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    <input id="first_name" type="text" class="form-control" placeholder="First Name" name="first_name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    <input id="last_name" type="text" class="form-control" placeholder="Last Name" name="last_name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    <input id="email1" type="text" class="form-control" placeholder="Email" name="email1" onchange="validateEmailAdd();" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    <input id="company_name_c" type="text" class="form-control" placeholder="Company Name" name="company_name_c" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    <input id="phone_main" type="text" class="form-control" placeholder="Phone" name="phone_main" />
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                 <textarea class="form-control" id="modalarea" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid" id="maincon">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#"><img src="assets/img/Logo.jpg" width="200" height="auto"></a>
@@ -43,36 +96,81 @@
                 </ul>
             </div>
         </nav>
-        <div class="jumbotron text-center">
+        <div class="jumbotron pb-2 text-center">
             <h1 class="display-3">Eat. Shop. Play.</h1>
             <p class="lead">The Broadway Merchants Association is bringing companies and the community closer together everyday.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6053.706816712172!2d-74.00827580653745!3d40.65516168490206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ac0786c3207%3A0x97a4c7862e8ef155!2sIndustry+City!5e0!3m2!1sen!2sus!4v1520485263039" width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="mainmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6053.706816712172!2d-74.00827580653745!3d40.65516168490206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ac0786c3207%3A0x97a4c7862e8ef155!2sIndustry+City!5e0!3m2!1sen!2sus!4v1520485263039" width="1000" height="450" frameborder="0" allowfullscreen></iframe>
             <p class="lead m-0">
                 <a class="btn btn-primary btn-lg mt-4" href="#" role="button">Find out more</a>
             </p>
-            <p class="lead small"><a href><u>Click here to register</u></a></p>
+            <p class="lead small"><a href="#" data-toggle="modal" data-target="#bannerformmodal"><u>Click here to register</u></a></p>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-8">
-                    <div class="card m-3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Company Listings</h5>
-                            <p class="card-text">Some quick example text to build on the card title</p>
-                            <a href="#" class="card-link">Another link</a>
+                <div id="accordion" class="col-7">
+                    <div class="card">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Company Type "Restaurants"
+                                </button>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="row">
+                                <div class="card-body text-center">
+                                    <div class="list-group col-md-12">
+                                        <a href="#" class="list-group-item list-group-item-action">Company 1</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Company 2</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Company 3</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="list-group col-md-12">
+                                        <a href="#" class="list-group-item list-group-item-action">Company 7</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Company 8</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Company 9</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card m-3 groupon">
+                    <div class="card mx-3 mb-3 groupon">
                         <div class="card-body text-center">
                             <h5 class="card-title">Groupon</h5>
                             <p class="card-text">Some quick example text to build on the card title</p>
                             <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
+               </div>
+        </div>
+        <div class="row mt-5">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="https://png.icons8.com/color/260/businessman.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://png.icons8.com/color/260/businessman.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://png.icons8.com/color/260/businessman.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
         <div class="container-fluid mt-5" id="foot">
             <footer class="page-footer font-small blue pt-4 mt-4">
@@ -113,8 +211,7 @@
                 </div>
             </footer>
         </div>
-    </div>
-
+               
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
