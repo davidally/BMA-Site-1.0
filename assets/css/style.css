@@ -18,8 +18,7 @@ a:hover {
 
 /*Nav Bar*/
 .navbar {
-    background-color: grey;
-    border-radius: 10px;
+    background-color: #FA7921;
 }
 
 /* Jumbotron */
@@ -60,18 +59,21 @@ a:hover {
     border-color:;
 }
 
-.fab:hover {
-    
-}
-
 .groupon {
     background-color: #b0f442;
 }
 
+.blogcard {
+    border:0;
+}
 /*Footer */
 #foot{
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .2);
     border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+#icons{
+   color: #FA7921;
 }
 
 .page-footer{
