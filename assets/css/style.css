@@ -36,6 +36,16 @@ a:hover {
     color: white;
 }
 
+.nav-link {
+    text-transform: uppercase;
+}
+
+.groupon {
+    width:150px;
+    padding: 0;
+    margin:0;
+}
+
 /*Responsive Gallery*/
 .cssrow {
   display: flex;
@@ -83,6 +93,13 @@ a:hover {
     font-family: 'Raleway', sans-serif;
 }
 
+/*Accordian*/
+.override .cordbtn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    color: black;
+} 
+
 /* Buttons */
 .btn {
     background-color:#D9594C;
@@ -113,7 +130,6 @@ a:hover {
 }
 
 .override .blogcard > img{
-    object-fit: cover;
     overflow: hidden;
 }
 
@@ -128,6 +144,7 @@ a:hover {
 
 .bloglay {
     background-color: rgba(0,0,0,.8);
+    overflow: hidden;
 }
 
 .override .bloglay > p {
