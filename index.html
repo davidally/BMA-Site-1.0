@@ -2,21 +2,22 @@
 <html>
 
 <head>
-    <title>bootstrap</title>
+    <title>Broadway Merchants Association</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway:100,600|Montserrat:900,700i" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body>
+<body class="override">
+<!--    Modal Box-->
     <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-content p-5">
-                    <div class="modal-header" align="left">
+                    <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title mx-3" id="myModalLabel">Contact Form</h4>
                     </div>
@@ -52,8 +53,8 @@
                                     <input id="phone_main" type="text" class="form-control" placeholder="Phone" name="phone_main" />
                                 </div>
                             </div>
-                             <div class="form-group">
-                                 <textarea class="form-control" id="modalarea" rows="3"></textarea>
+                            <div class="form-group">
+                                <textarea class="form-control" id="modalarea" rows="3"></textarea>
                             </div>
                         </form>
                     </div>
@@ -65,7 +66,8 @@
         </div>
     </div>
     <div class="container-fluid" id="maincon">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+<!--        Navigation-->
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -95,10 +97,36 @@
                 </ul>
             </div>
         </nav>
-        <div class="jumbotron pb-2 pt-4 text-center">
+        <div class="jumbotron pb-2 pt-6 text-center">
             <img src="assets/img/Logo.jpg" width="200" height="auto">
             <h1 class="display-3">Eat. Shop. Play.</h1>
             <p class="lead">The Broadway Merchants Association is bringing companies and the community closer together everyday.</p>
+        </div>
+        <div class="row d-flex justify-content-end">
+            <h1 class="titlebanner">FEATURED TOPICS</h1>
+        </div>
+        <div class="jumbotron pb-2 pt-6 text-center">
+            <!--           Article Gallery-->
+            <div class="cssrow">
+                <div class="column">
+                    <img src="assets/img/jess-watters-547394-unsplash.jpg">
+                    <img src="assets/img/william-white-34988-unsplash.jpg">
+                </div>                <div class="column">
+                    <img src="assets/img/jess-watters-547394-unsplash.jpg">
+                    <img src="assets/img/william-white-34988-unsplash.jpg">
+                </div>
+                <div class="column">
+                    <img src="assets/img/william-white-34988-unsplash.jpg">
+                    <img src="assets/img/roman-bozhko-251412-unsplash.jpg">
+                </div>
+                <div class="column">
+                    <img src="assets/img/william-white-34988-unsplash.jpg">
+                    <img src="assets/img/roman-bozhko-251412-unsplash.jpg">
+                </div>
+            </div>
+            <!--       Article Gallery-->
+            <h1 class="display-3">Connect.</h1>
+            <p class="lead">Explore our community and become part of the alliance.</p>
             <iframe class="mainmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6053.706816712172!2d-74.00827580653745!3d40.65516168490206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ac0786c3207%3A0x97a4c7862e8ef155!2sIndustry+City!5e0!3m2!1sen!2sus!4v1520485263039" width="1000" height="450" frameborder="0" allowfullscreen></iframe>
             <p class="lead m-0">
                 <a class="btn btn-primary btn-lg mt-4" href="#" role="button">Find out more</a>
@@ -109,10 +137,10 @@
             <div class="row">
                 <div id="accordion" class="col-md mb-3">
                     <div class="card">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Company Type "Restaurants"
                                 </button>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="row">
                                 <div class="card-body text-center">
                                     <div class="list-group col-md-12">
@@ -132,89 +160,96 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mx-3 mb-3 groupon">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Groupon</h5>
-                            <p class="card-text">Some quick example text to build on the card title</p>
-                            <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="row">
+                <h1 class="titlebanner">THE BLOG</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="card-deck">
+                    <div class="card blogcard">
+                        <img class="card-img-top img-responsive" src="https://images.unsplash.com/photo-1502226361531-64a073b9a4cc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f055044792cdf25e8aaec15e16440dc&auto=format&fit=crop&w=800&q=80" alt="Card image cap">
+                        <div class="card-img-overlay p-0">
+                            <div class="bloglay p-3">
+                                <h5 class="card-title"><a href="#">Blog Post #1</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
-               </div>
-        </div>
-        <div class="row mt-5">
-            <div class="card-deck">
-                <div class="card blogcard">
-                    <img class="card-img-top" src="https://images.unsplash.com/photo-1502226361531-64a073b9a4cc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f055044792cdf25e8aaec15e16440dc&auto=format&fit=crop&w=800&q=80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Blog Post #1</a></h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="card blogcard">
+                        <img class="card-img-top img-responsive" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-0.3.5&s=a5911803b489c97472a474d90ad226b3&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Card image cap">
+                        <div class="card-img-overlay p-0">
+                            <div class="bloglay p-3">
+                                <h5 class="card-title"><a href="#">Blog Post #2</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card blogcard">
-                    <img class="card-img-top" src="https://images.unsplash.com/photo-1490938182925-d897c6d99d0b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0e77f616e903dded12c926340e9df4&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Blog Post #2</a></h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card blogcard">
-                    <img class="card-img-top" src="https://images.unsplash.com/photo-1440613905118-99b921706b5c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36e1e24619c1947c6b775774a1e8eded&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Blog Post #3</a></h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="card blogcard">
+                        <img class="card-img-top img-responsive" src="https://images.unsplash.com/photo-1440613905118-99b921706b5c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36e1e24619c1947c6b775774a1e8eded&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
+                        <div class="card-img-overlay p-0">
+                            <div class="bloglay p-3">
+                                <h5 class="card-title"><a href="#">Blog Post #3</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        <div class="container-fluid mt-5" id="foot">
-            <footer class="page-footer font-small blue pt-4 mt-4">
-                <div class="container-fluid text-center text-md-left">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">SIGN UP FOR OUR NEWSLETTER</label>
-                                <div class="input-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                    <span class="input-group-btn">
+    </div>
+    <div class="container-fluid mt-5" id="foot">
+        <footer class="page-footer font-small blue pt-4 mt-4">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-4 my-auto">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">SIGN UP FOR OUR NEWSLETTER</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <span class="input-group-btn">
                                     <button type="submit" class="btn btn-primary ml-3">Submit</button>
                                 </span>
-                                </div>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
-                        </div>
-                        <div class="col-md-4 text-center align-bottom" id="icons">
-                            <a href="#" class="mx-3"><i class="fab fa-instagram fa-3x"></i></a>
-                            <a href="#" class="mx-3"><i class="fab fa-facebook fa-3x"></i></a>
-                            <a href="#" class="mx-3"><i class="fab fa-twitter fa-3x"></i></a>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-uppercase">Instagram Feed</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#!">Link 1</a></li>
-                                <li><a href="#!">Link 2</a></li>
-                                <li><a href="#!">Link 3</a></li>
-                                <li><a href="#!">Link 4</a></li>
-                            </ul>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                     </div>
-                </div>
-                <div class="footer-copyright py-3 text-center">
-                    <div class="container-fluid">
-                        <p> © 2018 Copyright Broadway Merchants Association </p>
+                    <div class="col-md-4 text-center my-auto">
+                        <ul class="list-unstyled" id="icons">
+                            <li class="list-inline-item"><a href="#" class="mx-3"><i class="fab fa-instagram fa-3x"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="mx-3"><i class="fab fa-facebook fa-3x"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="mx-3"><i class="fab fa-twitter fa-3x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 my-auto">
+                        <h5 class="text-uppercase">Instagram Feed</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!">Link 1</a></li>
+                            <li><a href="#!">Link 2</a></li>
+                            <li><a href="#!">Link 3</a></li>
+                            <li><a href="#!">Link 4</a></li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
-        </div>
-               
+            </div>
+            <div class="footer-copyright py-3 text-center">
+                <div class="container-fluid">
+                    <p> © 2018 Copyright Broadway Merchants Association </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
 

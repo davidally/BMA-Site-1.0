@@ -1,5 +1,4 @@
 *{
-    color: #545454;
     font-family:'Open Sans', sans-serif;
 }
 
@@ -16,15 +15,64 @@ a:hover {
     padding:0;
 }
 
+/*Title Banner*/
+.override .titlebanner {
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+    font-size: 4.5rem;
+    background-color: grey;
+    text-transform: uppercase;
+}
+
 /*Nav Bar*/
 .navbar {
     background-color: #FA7921;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-item > a {
+    color: white;
+}
+
+/*Responsive Gallery*/
+.cssrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:90%;
+  height:auto;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Jumbotron */
 .jumbotron {
     background-color: white;
-    border-radius: 10px;
 }
 
 .jumbotron h1{
@@ -48,6 +96,11 @@ a:hover {
     border-color:#595F72;
 }
 
+/*Modal*/
+.modal-header {
+    align-content: flex-start;
+}
+
 /*Map*/
 .mainmap {
     border: 2px solid #D9594C;
@@ -59,23 +112,59 @@ a:hover {
     border-color:;
 }
 
-.groupon {
-    background-color: #b0f442;
+.override .blogcard > img{
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.override .bloglay .card-title a{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-style:italic;
+    color: #D9594C;
+    text-transform:uppercase;
+    
+}
+
+.bloglay {
+    background-color: rgba(0,0,0,.8);
+}
+
+.override .bloglay > p {
+    color: white;
+}
+
+.override .bloglay {
+    opacity: 0;
+    overflow: hidden;
+}
+
+.override .bloglay:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .blogcard {
     border:0;
 }
+
 /*Footer */
 #foot{
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .2);
     border-top: 1px solid rgba(0, 0, 0, .2);
 }
 
-#icons{
-   color: #FA7921;
-}
-
 .page-footer{
     margin:40px;
+}
+
+.list-inline-item a {
+    color: #FA7921;
+}
+.list-inline-item a:hover{
+    color: #D9594C;
+
 }
