@@ -20,16 +20,45 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
     font-size: 4.5rem;
-    background-color: grey;
+    background-color: #4ABDAC;
     text-transform: uppercase;
+    text-decoration: underline;
+    color: #F7B733;
+}
+
+.override .bannerleft{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.override .bannerright{
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*Nav Bar*/
 .navbar {
-    background-color: #FA7921;
+    background-color: #FC4A1A;
     position:fixed;
     width: 100%;
     z-index: 100;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, .2);
 }
 
 .nav-item > a {
@@ -85,6 +114,10 @@ a:hover {
     background-color: white;
 }
 
+.override .topcon {
+    background-color:#F7B733;
+}
+
 .jumbotron h1{
     font-family:'Open Sans', sans-serif;
 }
@@ -93,19 +126,38 @@ a:hover {
     font-family: 'Raleway', sans-serif;
 }
 
+.override .middlecon{
+    background-color:#DFDCE3;
+}
+
 /*Accordian*/
 .override .cordbtn {
     font-family: 'Montserrat', sans-serif;
     font-weight:700;
-    color: black;
+    font-size:2rem;
+    text-decoration: none;
+    background-color:none;
+    border:none;
+    color: rgb(33,37,41);
 } 
+
+.override #accordion .list-group-item{
+    background-color: rgba(0,0,0,0);
+    border:none;
+}
+.override #accordion .card{
+    background-color: grey;
+    border:none;
+}
 
 /* Buttons */
 .btn {
-    background-color:#D9594C;
-    border-color:#D9594C;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color:grey;
+    border:none;
     text-transform: uppercase;
-    color:white;
+    color: rgb(33,37,41);
 }
 
 .btn:hover{
@@ -115,7 +167,12 @@ a:hover {
 
 /*Modal*/
 .modal-header {
-    align-content: flex-start;
+    justify-content: flex-start
+}
+
+.modal-header .close{
+    margin:5px 20px;
+    padding:0;
 }
 
 /*Map*/
@@ -139,12 +196,6 @@ a:hover {
     font-style:italic;
     color: #D9594C;
     text-transform:uppercase;
-    
-}
-
-.bloglay {
-    background-color: rgba(0,0,0,.8);
-    overflow: hidden;
 }
 
 .override .bloglay > p {
@@ -153,6 +204,7 @@ a:hover {
 
 .override .bloglay {
     opacity: 0;
+    background-color: rgba(0,0,0,.8);
     overflow: hidden;
 }
 
