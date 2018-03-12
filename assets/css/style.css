@@ -2,6 +2,12 @@
     font-family:'Open Sans', sans-serif;
 }
 
+body,
+.override .topcon {
+    background-color:#F7B733;
+}
+
+}
 a{
      color: #545454;
 }
@@ -114,10 +120,6 @@ a:hover {
     background-color: white;
 }
 
-.override .topcon {
-    background-color:#F7B733;
-}
-
 .jumbotron h1{
     font-family:'Open Sans', sans-serif;
 }
@@ -182,8 +184,10 @@ a:hover {
 }
 
 /* Cards */
+blogcard,
 .card {
     border-color:;
+	color:none;
 }
 
 .override .blogcard > img{
