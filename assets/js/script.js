@@ -1,56 +1,42 @@
-function initMap() {
-    
-    var broadway = {
-      info: '<strong>McDonalds on Broadway</strong><br>\
-            160 Broadway <br> New York NY 10038 <br>\
-            <a href="https://goo.gl/maps/PAeXvKk8moE2">Get Directions</a>',
-      lat: 40.622425,
-      long: -73.975572
-    };
-    
-    var belmont = {
-      info: '<strong>McDonalds on Belmont</strong><br>\
-            6620 Bay Pkwy<br> Brooklyn, NY 11204<br>\
-            <a href="https://goo.gl/maps/hnPayGKVyw62">Get Directions</a>',
-      lat: 40.612997,
-      long: -73.982865
-    };
-    
-    var sheridan = {
-      info: '<strong>Mcdonalds on Sheridan</strong><br>\r\
-            880 Coney Island Ave<br> Brooklyn, NY 11218<br>\
-            <a href="https://goo.gl/maps/GCWTNBLyYB32">Get Directions</a>',
-      lat: 40.635801,
-      long: -73.968134
-    };
-  
-    var locations = [
-        [broadway.info, broadway.lat, broadway.long, 0],
-        [belmont.info, belmont.lat, belmont.long, 1],
-        [sheridan.info, sheridan.lat, sheridan.long, 2],
-      ];
-  
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
-      center: new google.maps.LatLng(40.635250, -73.970494),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+$(function(){
+        var scroller = $('#scroller div.innerScrollArea');
+        var scrollerContent = scroller.children('ul');
+        scrollerContent.children().clone().appendTo(scrollerContent);
+        var curX = 0;
+        scrollerContent.children().each(function(){
+            var $this = $(this);
+            $this.css('left', curX);
+            curX += $this.outerWidth(true);
+        });
+        var fullW = curX / 2;
+        var viewportW = scroller.width();
+
+        // Scrolling speed management
+        var controller = {curSpeed:0, fullSpeed:2};
+        var $controller = $(controller);
+        var tweenToNewSpeed = function(newSpeed, duration)
+        {
+            if (duration === undefined)
+                duration = 600;
+            $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+        };
+
+        // Pause on hover
+        scroller.hover(function(){
+            tweenToNewSpeed(0);
+        }, function(){
+            tweenToNewSpeed(controller.fullSpeed);
+        });
+
+        // Scrolling management; start the automatical scrolling
+        var doScroll = function()
+        {
+            var curX = scroller.scrollLeft();
+            var newX = curX + controller.curSpeed;
+            if (newX > fullW*2 - viewportW)
+                newX -= fullW;
+            scroller.scrollLeft(newX);
+        };
+        setInterval(doScroll, 20);
+        tweenToNewSpeed(controller.fullSpeed);
     });
-  
-    var infowindow = new google.maps.InfoWindow({});
-  
-    var marker, i;
-  
-    for (i = 0; i < locations.length; i++) {
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
-      });
-  
-      google.maps.event.addListener(marker, 'click', (function (marker, i) {
-        return function () {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
-  }

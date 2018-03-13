@@ -2,12 +2,10 @@
     font-family:'Open Sans', sans-serif;
 }
 
-body,
-.override .topcon {
+body {
     background-color:#F7B733;
 }
 
-}
 a{
      color: #545454;
 }
@@ -60,7 +58,7 @@ a:hover {
 
 /*Nav Bar*/
 .navbar {
-    background-color: #FC4A1A;
+    background-color: #fc503a;
     position:fixed;
     width: 100%;
     z-index: 100;
@@ -76,12 +74,13 @@ a:hover {
 }
 
 .groupon {
-    width:150px;
+    width:9rem;
     padding: 0;
     margin:0;
 }
 
-/*Responsive Gallery*/
+/*Responsive Article Gallery*/
+
 .cssrow {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +94,7 @@ a:hover {
 }
 
 .column img {
-  margin-top: 8px;
+  margin: 15px 0px;
   vertical-align: middle;
   width:90%;
   height:auto;
@@ -117,19 +116,16 @@ a:hover {
 
 /* Jumbotron */
 .jumbotron {
-    background-color: white;
+    background-color: rgba(0,0,0,0);
 }
 
 .jumbotron h1{
-    font-family:'Open Sans', sans-serif;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .jumbotron p:nth-child(2){
-    font-family: 'Raleway', sans-serif;
-}
-
-.override .middlecon{
-    background-color:#DFDCE3;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Accordian*/
@@ -138,7 +134,7 @@ a:hover {
     font-weight:700;
     font-size:2rem;
     text-decoration: none;
-    background-color:none;
+    background-color:rgba(0,0,0,0);
     border:none;
     color: rgb(33,37,41);
 } 
@@ -148,7 +144,7 @@ a:hover {
     border:none;
 }
 .override #accordion .card{
-    background-color: grey;
+    background-color: rgba(0,0,0,0);
     border:none;
 }
 
@@ -156,15 +152,15 @@ a:hover {
 .btn {
     font-family:'Montserrat', sans-serif;
     font-weight: 700;
-    background-color:grey;
-    border:none;
+    background-color:#4ABDAC;
+    border: 1px solid #4ABDAC;
     text-transform: uppercase;
     color: rgb(33,37,41);
 }
 
 .btn:hover{
-    background-color: #595F72;
-    border-color:#595F72;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #4ABDAC;
 }
 
 /*Modal*/
@@ -224,20 +220,44 @@ blogcard,
     border:0;
 }
 
+/*Instagram Feed*/
+#scroller {
+        position: relative;
+    }
+    #scroller .innerScrollArea {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #scroller ul {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    #scroller li {
+        padding: 0;
+        list-style-type: none;
+        position: absolute;
+    }
+
 /*Footer */
-#foot{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .2);
-    border-top: 1px solid rgba(0, 0, 0, .2);
+.foot{
+    color: white;
+    background-color:#fc503a;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .5);
 }
 
-.page-footer{
-    margin:40px;
+.foot .form-text{
+    color:white;
 }
 
 .list-inline-item a {
-    color: #FA7921;
+    color: #4ABDAC;
 }
 .list-inline-item a:hover{
-    color: #D9594C;
+    color: #F7B733;
 
 }
