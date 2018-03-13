@@ -275,6 +275,7 @@ blogcard,
 
 .override .instafeed .thumbnail{
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .5);
+	margin-top: 30px;
 }
 
 /*Footer */
@@ -300,5 +301,5 @@ blogcard,
 .fa-twitter:hover,
 .fa-youtube:hover,
 .list-inline-item a:hover{
-    color: #F7B733;
+    color: white;
 }
