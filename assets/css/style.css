@@ -65,6 +65,10 @@ a:hover {
     box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, .2);
 }
 
+.navbar-toggler{
+	font-family:'Montserrat',sans-serif;
+}
+
 .nav-link {
     text-transform: uppercase;
     position: relative;
@@ -161,6 +165,17 @@ a:hover {
 
 .jumbotron p:nth-child(2){
     font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron:first-of-type {
+	background-image:url('../img/photo-1502819126416-d387f86d47a1.jpeg')
+}
+
+.jumbotron:first-of-type h1,
+.jumbotron:first-of-type h2,
+.jumbotron:first-of-type .lead{
+	color:white;
+	text-shadow: 2px 2px 8px rgba(0,0,0,1);
 }
 
 /*Accordian*/
