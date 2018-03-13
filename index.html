@@ -9,6 +9,25 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway:100,600|Montserrat:900,700i,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+	
+<!--	Google Map Responsive-->
+	<style>
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+		border: 2px solid #D9594C;
+		box-shadow: -2px 5px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
 </head>
 
 <body class="override">
@@ -176,7 +195,8 @@
             <div class="jumbotron py-6 m-0 text-center middlecon">
             <h1 class="display-3">Connect.</h1>
             <p class="lead">Explore our community and become part of the alliance.</p>
-				
+				<div class="google-maps">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8685.861608812062!2d-74.00364329976517!3d40.65438259801745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ac0786c3207%3A0x97a4c7862e8ef155!2sIndustry+City!5e0!3m2!1sen!2sus!4v1520954809766" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             <p class="lead m-0">
                 <a class="btn btn-primary btn-lg mt-4" href="#" role="button">Find out more</a>
             </p>
@@ -223,7 +243,7 @@
                 <h1 class="titlebanner bannerleft">THE BLOG</h1>
             </div>
         </div>
-        <div class="container-fluid mx-5">
+        <div class="container-fluid px-5">
             <div class="row">
 					<div class="col-lg-4 my-5">
                     <div class="card blogcard">

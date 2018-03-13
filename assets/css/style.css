@@ -76,6 +76,12 @@ a:hover {
     color:white;
 }
 
+.navbar-toggler-icon{
+    background-color: blue;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
 .override .nav-link:before {
   content: "";
   position: absolute;
@@ -222,12 +228,6 @@ a:hover {
 .modal-header .close{
     margin:5px 20px;
     padding:0;
-}
-
-/*Map*/
-.mainmap {
-    border: 2px solid #D9594C;
-    box-shadow: -2px 5px 10px 5px rgba(0, 0, 0, .2);
 }
 
 /* Cards */
