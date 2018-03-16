@@ -264,8 +264,12 @@ blogcard,
     text-transform:uppercase;
 }
 
-.override .bloglay > p {
+.override .bloglay p {
     color: white;
+}
+
+.override .bloglay h5{
+	font-size: 3rem;
 }
 
 .override .bloglay {
@@ -286,6 +290,8 @@ blogcard,
 
 .blogcard {
     border:0;
+	width: 100%;
+	height: auto;
 }
 
 /*Instagram Feed*/
